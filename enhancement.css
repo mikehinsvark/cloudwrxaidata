@@ -1,0 +1,212 @@
+/* Exact saved client-color.css, with GHL selector isolation only. Source commit: 74cc1e9bdf1b64ac14bdd24d07f3c634b06dc7fc */
+/* User-requested GOALL contrast and spotlight enhancement. Source layout stays intact. */
+#dreams-client-embed {
+  background:
+    radial-gradient(ellipse at 0 14%, #c8f0e766, transparent 38%),
+    radial-gradient(ellipse at 100% 70%, #fff0bc66, transparent 35%),
+    #e4efee;
+}
+#dreams-client-embed .client-page {
+  --cl-muted: #416d65;
+  --cl-line: #bfdbd0;
+  box-shadow: 0 24px 85px #123f3920, 0 0 48px #8cdcc518;
+}
+#dreams-client-embed .client-page .cl-eyebrow { color: #277a70; }
+#dreams-client-embed .cl-hero-intro, #dreams-client-embed .cl-section-heading > p { color: #456e65; }
+#dreams-client-embed .cl-range-source, #dreams-client-embed .cl-example-note, #dreams-client-embed .cl-systems > p { color: #526f65; }
+#dreams-client-embed .cl-header .cl-button-primary, #dreams-client-embed .cl-hero-actions .cl-button-primary {
+  background: #007e79;
+  border-color: #007e79;
+  box-shadow: 0 6px 18px #007e7924;
+}
+#dreams-client-embed .cl-header .cl-button-primary:hover, #dreams-client-embed .cl-hero-actions .cl-button-primary:hover {
+  background: #056b67;
+  border-color: #056b67;
+  box-shadow: 0 8px 26px #00a79435;
+}
+#dreams-client-embed .cl-principles svg { color: #007e79; }
+
+/* Three contrasting surfaces, repeated consistently across informational cards. */
+#dreams-client-embed .client-page :is(.cl-record-grid, .cl-case-grid, .cl-fit-grid, .cl-process-grid) > article {
+  --cl-card-ink: #113e38;
+  --cl-card-muted: #37655c;
+  --cl-card-line: #92cebd;
+  --cl-card-icon: #007b6d;
+  --cl-glow: 28 213 173;
+  color: var(--cl-card-ink);
+  border: 1px solid var(--cl-card-line);
+  border-radius: 13px;
+  background: linear-gradient(120deg, #e3faf1, #b4ecdb);
+  box-shadow: 0 8px 24px #1097770b;
+}
+#dreams-client-embed .client-page :is(.cl-record-grid, .cl-case-grid, .cl-fit-grid, .cl-process-grid) > article:nth-child(3n + 2) {
+  --cl-card-ink: #f4fbfa;
+  --cl-card-muted: #bbdcdd;
+  --cl-card-line: #366b70;
+  --cl-card-icon: #78dfd0;
+  --cl-glow: 75 222 219;
+  background: linear-gradient(135deg, #164c50, #071c2c);
+  box-shadow: 0 10px 25px #092b3520;
+}
+#dreams-client-embed .client-page :is(.cl-record-grid, .cl-case-grid, .cl-fit-grid, .cl-process-grid) > article:nth-child(3n) {
+  --cl-card-ink: #463811;
+  --cl-card-muted: #705b25;
+  --cl-card-line: #e4c766;
+  --cl-card-icon: #96751d;
+  --cl-glow: 255 214 94;
+  background: linear-gradient(120deg, #fff1bd, #ffdf86);
+  box-shadow: 0 8px 24px #d3a63e10;
+}
+#dreams-client-embed .client-page :is(.cl-record-grid, .cl-case-grid, .cl-fit-grid, .cl-process-grid) > article :is(h3, strong) {
+  color: var(--cl-card-ink);
+}
+#dreams-client-embed .client-page :is(.cl-record-grid, .cl-case-grid, .cl-fit-grid, .cl-process-grid) > article p {
+  color: var(--cl-card-muted);
+}
+#dreams-client-embed .client-page :is(.cl-record-grid, .cl-case-grid, .cl-fit-grid, .cl-process-grid) > article svg {
+  color: var(--cl-card-icon);
+}
+#dreams-client-embed .cl-record-grid article { min-height: 238px; padding: 25px 22px; }
+#dreams-client-embed .cl-record-grid h3 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 27px;
+  font-weight: 500;
+  line-height: 1.13;
+  letter-spacing: -.025em;
+  margin-bottom: 13px;
+}
+#dreams-client-embed .cl-record-grid p { font-size: 11px; line-height: 1.85; }
+#dreams-client-embed .cl-record-top { margin-bottom: 23px; }
+#dreams-client-embed .cl-record-top > small { color: var(--cl-card-muted); }
+#dreams-client-embed .cl-icon-box {
+  width: 44px;
+  height: 44px;
+  border-color: var(--cl-card-line);
+  background: #ffffff20;
+  color: var(--cl-card-icon);
+}
+#dreams-client-embed .cl-case-grid article { min-height: 188px; padding: 26px; }
+#dreams-client-embed .cl-case-grid article .cl-case-amount { color: var(--cl-card-icon); }
+#dreams-client-embed .cl-case-grid article .cl-case-rule { background: var(--cl-card-line); }
+#dreams-client-embed .cl-case-grid h3 { font-size: 15px; }
+#dreams-client-embed .cl-case-grid p { font-size: 11px; }
+#dreams-client-embed .cl-fit-grid article { min-height: 174px; padding: 24px; }
+#dreams-client-embed .cl-fit-grid strong { font-size: 16px; }
+#dreams-client-embed .cl-fit-grid p { font-size: 11px; }
+#dreams-client-embed .cl-fit-grid svg { width: 26px; height: 26px; }
+#dreams-client-embed .cl-process-grid { gap: 16px; border: 0; padding: 0; }
+#dreams-client-embed .cl-process-grid article { padding: 24px; min-height: 209px; }
+#dreams-client-embed .cl-process-grid article > span {
+  background: #ffffff20;
+  color: var(--cl-card-icon);
+  border-color: var(--cl-card-line);
+  margin-bottom: 19px;
+}
+#dreams-client-embed .cl-process-grid h3 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 26px;
+  line-height: 1.15;
+  font-weight: 500;
+  margin-bottom: 11px;
+}
+#dreams-client-embed .cl-process-grid p { font-size: 11px; }
+
+#dreams-client-embed .cl-calculator {
+  background: linear-gradient(130deg, #d9f5e9, #edf9ef 50%, #fff1c94a);
+  border-color: #a8d5c2;
+}
+#dreams-client-embed .cl-calc-result, #dreams-client-embed .cl-range-float {
+  --cl-glow: 52 219 185;
+  background: radial-gradient(ellipse at 90% 0, #1d7370, transparent 65%), linear-gradient(130deg, #123f42, #082832);
+  border-color: #3c7976;
+}
+#dreams-client-embed .cl-calc-amount { color: #f5e39e; }
+#dreams-client-embed .cl-calc-controls { --cl-glow: 39 199 153; border-color: #b4d9c5; }
+#dreams-client-embed .cl-privacy {
+  background: radial-gradient(ellipse at 90% 0, #1b6461, transparent 65%), linear-gradient(130deg, #123f42, #082832);
+  border-color: #3c7976;
+}
+#dreams-client-embed .cl-privacy .cl-eyebrow, #dreams-client-embed .cl-final .cl-eyebrow { color: #8fd4c8; }
+#dreams-client-embed .cl-privacy h2 em, #dreams-client-embed .cl-final h2 em { color: #f4de91; }
+#dreams-client-embed .cl-privacy-demo { --cl-glow: 58 202 166; background: #e1f5e8; border-color: #97c9b0; }
+#dreams-client-embed .cl-demo-switch { background: #d5eade; }
+#dreams-client-embed .cl-demo-switch > button[aria-pressed="true"] { background: #007e79; color: white; box-shadow: 0 3px 9px #007e7928; }
+#dreams-client-embed .cl-value-factors { --cl-glow: 255 211 94; background: linear-gradient(110deg, #fff2c6, #ffe5a0); border-color: #e1c66e; }
+#dreams-client-embed .cl-value-factors :is(small, strong, p) { color: #715b25; }
+#dreams-client-embed .cl-final {
+  background: radial-gradient(ellipse at 90% 0, #246d62, transparent 65%), linear-gradient(120deg, #113f42, #092735);
+  border-color: #3b7974;
+}
+#dreams-client-embed .cl-final-action .cl-button, #dreams-client-embed .cl-calc-result .cl-button-primary {
+  background: #f5dfa0;
+  border-color: #f5dfa0;
+  color: #3d3315 !important;
+  box-shadow: 0 5px 18px #ffd57017;
+}
+#dreams-client-embed .cl-final-action .cl-button:hover, #dreams-client-embed .cl-calc-result .cl-button-primary:hover {
+  background: #ffedb9;
+  border-color: #ffedb9;
+  box-shadow: 0 8px 25px #ffe09235;
+}
+
+/* Non-interactive cards remain non-interactive; the light is decorative only. */
+#dreams-client-embed .client-page :is(.cl-record-grid article, .cl-case-grid article, .cl-fit-grid article, .cl-process-grid article,
+  .cl-calc-controls, .cl-calc-result, .cl-privacy-demo, .cl-range-float, .cl-value-factors) {
+  position: relative;
+  isolation: isolate;
+  transition: box-shadow .25s ease, border-color .25s ease, transform .25s ease;
+}
+#dreams-client-embed .client-page :is(.cl-record-grid article, .cl-case-grid article, .cl-fit-grid article, .cl-process-grid article,
+  .cl-calc-controls, .cl-calc-result, .cl-privacy-demo, .cl-range-float, .cl-value-factors)::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0;
+  background: radial-gradient(300px circle at var(--cl-pointer-x, 50%) var(--cl-pointer-y, 35%), rgb(var(--cl-glow, 40 209 170) / .24), transparent 72%);
+  transition: opacity .25s ease;
+}
+#dreams-client-embed .client-page :is(.cl-record-grid article, .cl-case-grid article, .cl-fit-grid article, .cl-process-grid article,
+  .cl-calc-controls, .cl-calc-result, .cl-privacy-demo, .cl-range-float, .cl-value-factors):focus-within {
+  box-shadow: 0 0 0 2px rgb(var(--cl-glow, 40 209 170) / .25), 0 12px 34px rgb(var(--cl-glow, 40 209 170) / .22);
+}
+#dreams-client-embed .client-page :is(.cl-record-grid article, .cl-case-grid article, .cl-fit-grid article, .cl-process-grid article,
+  .cl-calc-controls, .cl-calc-result, .cl-privacy-demo, .cl-range-float, .cl-value-factors):focus-within::before {
+  opacity: .55;
+}
+@media (hover: hover) and (pointer: fine) {
+  #dreams-client-embed .client-page :is(.cl-record-grid article, .cl-case-grid article, .cl-fit-grid article, .cl-process-grid article):hover {
+    transform: translateY(-5px);
+    border-color: rgb(var(--cl-glow) / .75);
+    box-shadow: 0 0 0 1px rgb(var(--cl-glow) / .14), 0 14px 35px rgb(var(--cl-glow) / .28), 0 0 34px rgb(var(--cl-glow) / .13);
+  }
+  #dreams-client-embed .client-page :is(.cl-record-grid article, .cl-case-grid article, .cl-fit-grid article, .cl-process-grid article,
+    .cl-calc-controls, .cl-calc-result, .cl-privacy-demo, .cl-range-float, .cl-value-factors)[data-glow-active="true"]::before { opacity: 1; }
+  #dreams-client-embed .client-page :is(.cl-calc-controls, .cl-calc-result, .cl-privacy-demo, .cl-range-float, .cl-value-factors):hover {
+    border-color: rgb(var(--cl-glow) / .7);
+    box-shadow: 0 0 0 1px rgb(var(--cl-glow) / .15), 0 10px 32px rgb(var(--cl-glow) / .2);
+  }
+}
+@media (max-width: 850px) {
+  #dreams-client-embed .cl-record-grid article { min-height: 214px; }
+}
+@media (max-width: 640px) {
+  #dreams-client-embed .cl-record-grid { grid-template-columns: 1fr; gap: 13px; }
+  #dreams-client-embed .cl-record-grid article { padding: 24px; min-height: 0; }
+  #dreams-client-embed .cl-record-grid h3 { font-size: 31px; }
+  #dreams-client-embed .cl-record-grid p { font-size: 12px; }
+  #dreams-client-embed .cl-case-grid article, #dreams-client-embed .cl-fit-grid article, #dreams-client-embed .cl-process-grid article { min-height: 0; padding: 23px; }
+  #dreams-client-embed .cl-case-grid h3 { font-size: 15px; }
+  #dreams-client-embed .cl-process-grid h3 { font-size: 26px; }
+  #dreams-client-embed .cl-process-grid { gap: 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #dreams-client-embed .client-page :is(.cl-record-grid article, .cl-case-grid article, .cl-fit-grid article, .cl-process-grid article):hover {
+    transform: none;
+  }
+  #dreams-client-embed .client-page :is(.cl-record-grid article, .cl-case-grid article, .cl-fit-grid article, .cl-process-grid article,
+    .cl-calc-controls, .cl-calc-result, .cl-privacy-demo, .cl-range-float, .cl-value-factors)[data-glow-active="true"]::before { opacity: .5; }
+}
+

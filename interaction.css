@@ -1,0 +1,270 @@
+/* Exact saved client-navigator.css, with GHL selector isolation only. Source commit: 74cc1e9bdf1b64ac14bdd24d07f3c634b06dc7fc */
+/* Scoped section navigation only. Loaded by the parent through index.css. */
+#dreams-client-embed .cl-section-navigator {
+  --cl-navigator-teal: #007e79;
+  --cl-navigator-mint: #7edfc9;
+  --cl-navigator-white: #f7fcfb;
+  position: fixed;
+  z-index: 40;
+  top: 50%;
+  right: 4px;
+  width: 54px;
+  transform: translateY(-50%);
+  color: var(--cl-navigator-teal);
+  font-family: "DM Sans", Inter, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+#dreams-client-embed .cl-section-navigator, #dreams-client-embed .cl-section-navigator * {
+  box-sizing: border-box;
+}
+
+#dreams-client-embed .cl-section-navigator__rail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 4px;
+  border: 1px solid rgb(0 126 121 / 42%);
+  border-radius: 999px;
+  background: rgb(247 252 251 / 94%);
+  box-shadow:
+    0 0 0 4px rgb(126 223 201 / 12%),
+    0 0 22px rgb(126 223 201 / 24%),
+    0 8px 28px rgb(0 76 70 / 12%);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+}
+
+#dreams-client-embed .cl-section-navigator .cl-section-navigator__arrow, #dreams-client-embed .cl-section-navigator .cl-section-navigator__toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 44px;
+  height: 44px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--cl-navigator-teal);
+  font: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition:
+    background-color 160ms ease,
+    color 160ms ease;
+}
+
+#dreams-client-embed .cl-section-navigator .cl-section-navigator__arrow[aria-disabled="true"] {
+  color: rgb(0 126 121 / 30%);
+  cursor: default;
+}
+
+#dreams-client-embed .cl-section-navigator__dots, #dreams-client-embed .cl-section-navigator__section-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#dreams-client-embed .cl-section-navigator__dots {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2px 0;
+}
+
+#dreams-client-embed .cl-section-navigator__dots li {
+  height: 22px;
+}
+
+#dreams-client-embed .cl-section-navigator .cl-section-navigator__dot-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 22px;
+  border-radius: 11px;
+  text-decoration: none;
+}
+
+#dreams-client-embed .cl-section-navigator__dot {
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgb(0 126 121 / 35%);
+  transition:
+    width 160ms ease,
+    height 160ms ease,
+    background-color 160ms ease,
+    box-shadow 160ms ease;
+}
+
+#dreams-client-embed .cl-section-navigator__dot-link[aria-current="location"]
+  .cl-section-navigator__dot {
+  width: 11px;
+  height: 11px;
+  background: var(--cl-navigator-teal);
+  box-shadow: 0 0 0 4px rgb(126 223 201 / 30%);
+}
+
+#dreams-client-embed .cl-section-navigator__picker {
+  position: static;
+  width: 44px;
+}
+
+#dreams-client-embed .cl-section-navigator .cl-section-navigator__toggle {
+  flex-direction: row;
+  gap: 3px;
+  list-style: none;
+}
+
+#dreams-client-embed .cl-section-navigator__toggle::-webkit-details-marker {
+  display: none;
+}
+
+#dreams-client-embed .cl-section-navigator__number {
+  font-size: 11px;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+  line-height: 1;
+}
+
+#dreams-client-embed .cl-section-navigator__toggle svg {
+  transition: transform 160ms ease;
+}
+
+#dreams-client-embed .cl-section-navigator__picker[open] .cl-section-navigator__toggle svg {
+  transform: rotate(180deg);
+}
+
+#dreams-client-embed .cl-section-navigator__panel {
+  position: absolute;
+  right: calc(100% + 14px);
+  bottom: 0;
+  width: min(264px, calc(100vw - 32px));
+  max-height: calc(100vh - 32px);
+  max-height: calc(100dvh - 32px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 14px 10px 10px;
+  border: 1px solid rgb(0 126 121 / 32%);
+  border-radius: 16px;
+  background: rgb(247 252 251 / 98%);
+  box-shadow: 0 12px 36px rgb(0 76 70 / 15%);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+}
+
+#dreams-client-embed .cl-section-navigator .cl-section-navigator__panel-title {
+  margin: 0 8px 9px;
+  color: #315f59;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+#dreams-client-embed .cl-section-navigator .cl-section-navigator__section-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 40px;
+  padding: 8px;
+  border-radius: 8px;
+  color: #215850;
+  font-size: 12px;
+  text-decoration: none;
+  transition: background-color 160ms ease;
+}
+
+#dreams-client-embed .cl-section-navigator__section-number {
+  flex: none;
+  width: 20px;
+  color: var(--cl-navigator-teal);
+  font-size: 10px;
+  font-variant-numeric: tabular-nums;
+}
+
+#dreams-client-embed .cl-section-navigator
+  .cl-section-navigator__section-link[aria-current="location"] {
+  background: rgb(126 223 201 / 25%);
+  color: var(--cl-navigator-teal);
+  font-weight: 700;
+}
+
+#dreams-client-embed .cl-section-navigator a:focus-visible, #dreams-client-embed .cl-section-navigator summary:focus-visible {
+  outline: 2px solid var(--cl-navigator-teal);
+  outline-offset: 2px;
+  background: rgb(126 223 201 / 24%);
+}
+
+/* Hover is an enhancement, never the only way to reveal section labels. */
+@media (hover: hover) and (pointer: fine) {
+  #dreams-client-embed .cl-section-navigator
+    .cl-section-navigator__arrow:not([aria-disabled="true"]):hover, #dreams-client-embed .cl-section-navigator .cl-section-navigator__toggle:hover, #dreams-client-embed .cl-section-navigator .cl-section-navigator__section-link:hover {
+    background: rgb(126 223 201 / 25%);
+  }
+
+  #dreams-client-embed .cl-section-navigator__dot-link:hover .cl-section-navigator__dot {
+    background: var(--cl-navigator-teal);
+  }
+}
+
+/* At wide widths, the whole pill sits beyond the centered 1200px page box. */
+@media (min-width: 1400px) {
+  #dreams-client-embed .cl-section-navigator {
+    right: calc((100vw - 1200px) / 2 - 82px);
+    width: 58px;
+  }
+
+  #dreams-client-embed .cl-section-navigator__rail {
+    padding-inline: 6px;
+  }
+}
+
+/* Compact dock also avoids cropping the vertical pill in short landscapes. */
+@media (max-width: 900px), (max-height: 540px) {
+  #dreams-client-embed .cl-section-navigator {
+    top: auto;
+    right: max(12px, env(safe-area-inset-right, 0px));
+    bottom: max(12px, env(safe-area-inset-bottom, 0px));
+    width: auto;
+    transform: none;
+  }
+
+  #dreams-client-embed .cl-section-navigator__rail {
+    flex-direction: row;
+    gap: 2px;
+    padding: 4px;
+  }
+
+  #dreams-client-embed .cl-section-navigator__dots {
+    display: none;
+  }
+
+  #dreams-client-embed .cl-section-navigator__panel {
+    right: 0;
+    bottom: calc(100% + 12px);
+    max-height: calc(100vh - 100px - env(safe-area-inset-bottom, 0px));
+    max-height: calc(100dvh - 100px - env(safe-area-inset-bottom, 0px));
+  }
+
+  #dreams-client-embed .cl-section-navigator .cl-section-navigator__section-link {
+    min-height: 44px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #dreams-client-embed .cl-section-navigator, #dreams-client-embed .cl-section-navigator * {
+    scroll-behavior: auto;
+    transition: none;
+    animation: none;
+  }
+}
+
