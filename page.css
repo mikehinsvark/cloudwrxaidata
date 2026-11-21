@@ -1,5 +1,5 @@
 
-#dreams-client-embed { position:relative; isolation:isolate; width:100%; text-align:left; font-size:16px; }
+#dreams-client-embed { box-sizing:border-box; position:relative; isolation:isolate; width:100%; text-align:left; font-size:16px; }
 #dreams-client-embed *, #dreams-client-embed *::before, #dreams-client-embed *::after { box-sizing:border-box; }
 #dreams-client-embed img { display:block; max-width:100%; }
 #dreams-client-embed svg { display:block; flex-shrink:0; vertical-align:middle; }
